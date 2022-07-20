@@ -12,6 +12,31 @@ Setup a remote VM hosted on Proxmox that you can develop on from your local mach
 
 - SSH into the server.
 
+### Setup Dev Tools
+
+Neovim (weapon of choice):
+
+```bash
+sudo apt install neovim
+```
+
+Setup your Config:
+
+```bash
+cd ~/.config/
+mkdir nvim
+cd nvim/
+```
+
+Add VimPlug (Used for Vim Plugins)
+
+```bash
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+Populate your `init.lua`/`init.vim` and other config files here.
+
 ### Setup Node Development Environment
 
 Install NVM:
@@ -47,4 +72,14 @@ Or Use LTS
 ```bash
 nvm install --lts
 ```
+
+Install Yarn (I like Yarn)
+
+```bash
+npm i -g yarn
+```
+
+### For VSCode Users
+
+You're basically done, just setup remote session and point to your new VM. Enjoy the painfree experience 🙂.
 
