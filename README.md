@@ -20,6 +20,8 @@ Neovim (weapon of choice):
 sudo apt install neovim
 ```
 
+In some cases you may get an older version of Neovim than the current stable version. Head to [Neovim Docs](https://github.com/neovim/neovim/wiki/Installing-Neovim) to get instructions to proceed.
+
 Setup your Config:
 
 ```bash
